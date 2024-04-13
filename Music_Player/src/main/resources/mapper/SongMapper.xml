@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.app.mapper.SongMapper">
+    <resultMap id="SongEntityMap" type="com.app.entity.Song">
+        <id column="song_id" property="song_id"/>
+        <result column="url" property="url"/>
+        <result column="img_url" property="img_url"/>
+        <result column="type" property="type"/>
+        <result column="song_word_url" property="song_word_url"/>
+        <result column="singer_id" property="singer_id"/>
+        <result column="time" property="time"/>
+        <result column="list_id" property="list_id"/>
+        <result column="album" property="album"/>
+
+    </resultMap>
+</mapper>
