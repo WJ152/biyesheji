@@ -58,4 +58,15 @@ public class SongList {
     public void setIntroduction(String introduction) {
         this.introduction = introduction;
     }
+
+    @Override
+    public String toString() {
+        return "SongList{" +
+                "list_id=" + list_id +
+                ", user_id=" + user_id +
+                ", song_list='" + song_list + '\'' +
+                ", create_time='" + create_time + '\'' +
+                ", introduction='" + introduction + '\'' +
+                '}';
+    }
 }

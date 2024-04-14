@@ -11,8 +11,8 @@ public interface SongListMapper {
     Integer insert(SongList songList);
     //根据歌单id删除
     Integer delete_by_songList_id(Integer songList_id);
-    //根据用户id查找全部歌单
-    List<SongList> find_by_user_id(Integer user_id);
+    //根据用户id查找全部歌单 分页
+    List<SongList> find_by_user_id(Integer user_id,Integer start,Integer number);
     //根据歌单id更新
-    Integer update_by_songList_id(Integer songList_id);
+    Integer update_by_songList_id(SongList songList);
 }

@@ -134,4 +134,22 @@ public class User {
     public void setType(Integer type) {
         this.type = type;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "user_id=" + user_id +
+                ", user_name='" + user_name + '\'' +
+                ", password='" + password + '\'' +
+                ", age=" + age +
+                ", phone='" + phone + '\'' +
+                ", last_login_time='" + last_login_time + '\'' +
+                ", register_time='" + register_time + '\'' +
+                ", img_url='" + img_url + '\'' +
+                ", hobby='" + hobby + '\'' +
+                ", like_singer_list='" + like_singer_list + '\'' +
+                ", state=" + state +
+                ", type=" + type +
+                '}';
+    }
 }

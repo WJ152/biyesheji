@@ -16,7 +16,8 @@ public interface UserMapper {
     Integer update_by_user_id(User u);
     //根据用户名称查找
     User find_by_user_name(String user_name);
-    //分页查找所有用户
-    List<User> find_part_list(Integer start_user_id,Integer page);
+
+    //分页查找所有用户  跳过start 返回number数据
+    List<User> find_part_list(Integer start,Integer number);
 
 }

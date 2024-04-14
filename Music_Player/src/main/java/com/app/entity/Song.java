@@ -1,7 +1,11 @@
 package com.app.entity;
 /*
-* 歌曲字段
+* 歌曲字段  歌曲总是有歌唱者，专辑
 * id
+* 歌曲名称
+* song_name
+* 歌曲描述
+* song_introduction
 * 歌曲位置
 * url
 * 图片id
@@ -21,6 +25,9 @@ package com.app.entity;
 * */
 public class Song {
     Integer song_id;
+    String song_name;
+    String song_introduction;
+
     String url;
     String img_url;
     String type;
@@ -100,5 +107,38 @@ public class Song {
 
     public void setAlbum(String album) {
         this.album = album;
+    }
+
+    public String getSong_name() {
+        return song_name;
+    }
+
+    public void setSong_name(String song_name) {
+        this.song_name = song_name;
+    }
+
+    public String getSong_introduction() {
+        return song_introduction;
+    }
+
+    public void setSong_introduction(String song_introduction) {
+        this.song_introduction = song_introduction;
+    }
+
+    @Override
+    public String toString() {
+        return "Song{" +
+                "song_id=" + song_id +
+                ", song_name='" + song_name + '\'' +
+                ", song_introduction"+song_introduction+'\''+
+                ", url='" + url + '\'' +
+                ", img_url='" + img_url + '\'' +
+                ", type='" + type + '\'' +
+                ", song_word_url='" + song_word_url + '\'' +
+                ", singer_id=" + singer_id +
+                ", time='" + time + '\'' +
+                ", list_id=" + list_id +
+                ", album='" + album + '\'' +
+                '}';
     }
 }

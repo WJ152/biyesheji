@@ -19,7 +19,7 @@ public class Comment {
     Integer song_id;
     String content;
     String publish_time;
-    Integer like;
+    Integer likes;
 
     public Integer getComment_id() {
         return comment_id;
@@ -62,10 +62,22 @@ public class Comment {
     }
 
     public Integer getLike() {
-        return like;
+        return likes;
     }
 
-    public void setLike(Integer like) {
-        this.like = like;
+    public void setLikes(Integer likes) {
+        this.likes = likes;
+    }
+
+    @Override
+    public String toString() {
+        return "Comment{" +
+                "comment_id=" + comment_id +
+                ", user_id=" + user_id +
+                ", song_id=" + song_id +
+                ", content='" + content + '\'' +
+                ", publish_time='" + publish_time + '\'' +
+                ", likes=" + likes +
+                '}';
     }
 }
